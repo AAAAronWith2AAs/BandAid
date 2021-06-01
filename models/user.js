@@ -16,9 +16,46 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    first_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    last_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    city: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    state: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    band_name: {
+      type: DataTypes.STRING,
+    },
+    label: {
+      type: DataTypes.STRING,
+    },
+    facebook: {
+      type: DataTypes.STRING,
+    },
+    twitter: {
+      type: DataTypes.STRING,
+    },
+    soundcloud: {
+      type: DataTypes.STRING,
+    },
+    bandcamp: {
+      type: DataTypes.STRING,
+    },
+    myspace: {
+      type: DataTypes.STRING,
     },
     email: {
       type: DataTypes.STRING,
