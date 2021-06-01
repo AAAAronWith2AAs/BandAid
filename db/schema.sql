@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS bandaid_db;
+CREATE DATABASE bandaid_db;
