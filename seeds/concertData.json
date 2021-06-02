@@ -5,12 +5,14 @@
     "date": "2021-09-26",
     "headliner": "Best Band Ever",
     "guarantee": "Free Drinks!",
-    "presaleAmount": "100",
-    "presaleSold": "200",
-    "twentyOnePlus": "true",
-    "actualPayout": "50",
-    "merchSales": "100",
-    "comments": "Super fun show!"
+    "presaleAmount": 100,
+    "presaleSold": 200,
+    "twentyOnePlus": true,
+    "actualPayout": 50,
+    "merchSales": 100,
+    "comments": "Super fun show!",
+    "userId": 1,
+    "venueId": 2
   },
   {
     "venueName": "Party Place",
@@ -18,12 +20,14 @@
     "date": "2021-10-26",
     "headliner": "Becky's Band",
     "guarantee": "Free Drinks!",
-    "presaleAmount": "100",
-    "presaleSold": "200",
-    "twentyOnePlus": "true",
-    "actualPayout": "50",
-    "merchSales": "100",
-    "comments": "Hard core fans will love it!"
+    "presaleAmount": 100,
+    "presaleSold": 200,
+    "twentyOnePlus": true,
+    "actualPayout": 50,
+    "merchSales": 100,
+    "comments": "Hard core fans will love it!",
+    "userId": 1,
+    "venueId": 2
   },
   {
     "venueName": "Party Palace",
@@ -31,11 +35,13 @@
     "date": "2021-11-26",
     "headliner": "Sarah's Band",
     "guarantee": "Free Drinks!",
-    "presaleAmount": "100",
-    "presaleSold": "200",
-    "twentyOnePlus": "true",
-    "actualPayout": "50",
-    "merchSales": "100",
-    "comments": "Metal af"
+    "presaleAmount": 100,
+    "presaleSold": 200,
+    "twentyOnePlus": true,
+    "actualPayout": 50,
+    "merchSales": 100,
+    "comments": "Metal af",
+    "userId": 1,
+    "venueId": 2
   }
 ]
