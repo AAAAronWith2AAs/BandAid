@@ -4,7 +4,7 @@
     "venueCity": "Denver",
     "venueState": "Colorado",
     "contactEmail": "partytown@yahoo.com",
-    "phone": 5555555555,
+    "phone": "5555555555",
     "mgmt": "Billy Bob",
     "rating": "ten outta ten"
   },
@@ -13,7 +13,7 @@
     "venueCity": "New York",
     "venueState": "New York",
     "contactEmail": "partyplace@yahoo.com",
-    "phone": 5555555555,
+    "phone": "5555555555",
     "mgmt": "Benny Bob",
     "rating": "seven outta ten"
   },
@@ -22,7 +22,7 @@
     "venueCity": "Nashville",
     "venueState": "Tennesse",
     "contactEmail": "partypalace@yahoo.com",
-    "phone": 5555555555,
+    "phone": "5555555555",
     "mgmt": "Bo Bob",
     "rating": "eight outta ten"
   }
