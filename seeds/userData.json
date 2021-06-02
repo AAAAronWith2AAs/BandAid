@@ -1,0 +1,50 @@
+[
+  {
+    "username": "omg123",
+    "first_name": "Becky",
+    "last_name": "Bridges",
+    "city": "New York",
+    "state": "New York",
+    "band_name": "Becky's Band",
+    "label": "Becky's label",
+    "facebook": "becky.bridges",
+    "twitter": "@beckybridges",
+    "soundcloud": "becky-bridges",
+    "bandcamp": "beckybridges",
+    "myspace": "beckybridges",
+    "email": "bbridges@gmail.com",
+    "password": "password123"
+  },
+  {
+    "username": "rock4ever",
+    "first_name": "Jesse",
+    "last_name": "James",
+    "city": "Nashville",
+    "state": "Tennessee",
+    "band_name": "Jesse's Band",
+    "label": "Jesse's label",
+    "facebook": "jesse.james",
+    "twitter": "@jessejames",
+    "soundcloud": "jesse-james",
+    "bandcamp": "jessejames",
+    "myspace": "jessejames",
+    "email": "jjames@gmail.com",
+    "password": "password123"
+  },
+  {
+    "username": "punk420",
+    "first_name": "Sarah",
+    "last_name": "Savage",
+    "city": "Portland",
+    "state": "Oregon",
+    "band_name": "Sarah's Band",
+    "label": "Sarah's label",
+    "facebook": "sarah.savage",
+    "twitter": "@sarahsavage",
+    "soundcloud": "sarah-savage",
+    "bandcamp": "sarahsavage",
+    "myspace": "sarahsavage",
+    "email": "sssavage@gmail.com",
+    "password": "password123"
+  }
+]
