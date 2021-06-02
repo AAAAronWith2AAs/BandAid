@@ -36,4 +36,21 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.put("/:id", async (req, res) => {
+  try {
+    const concertData = await Concert.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!concertData[0]) {
+      res.status(404).json({ message: "No concert with this id!" });
+      return;
+    }
+    res.status(200).json(concertData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
