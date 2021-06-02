@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/AaronDMendoza/BandAid/issues"
   },
-  "homepage": "https://github.com/AaronDMendoza/BandAid#readme"
+  "homepage": "https://github.com/AaronDMendoza/BandAid#readme",
+  "dependencies": {
+    "dependencies": "0.0.1"
+  }
 }
