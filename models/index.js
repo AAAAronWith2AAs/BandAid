@@ -3,18 +3,19 @@ const Concert = require("./concert");
 const Venue = require("./venue");
 
 Concert.belongsTo(User, {
-  foreignKey: "user_id",
+  foreignKey: "userId",
 });
 
 User.hasMany(Concert, {
-  foreignKey: "user_id",
+  foreignKey: "userId",
 });
+
 Concert.belongsTo(Venue, {
-  foreignKey: "venue_id",
+  foreignKey: "venueId",
 });
 
-User.hasMany(Concert, {
-  foreignKey: "venue_id",
+Venue.hasMany(Concert, {
+  foreignKey: "venueId",
 });
 
 module.exports = { User, Concert, Venue };

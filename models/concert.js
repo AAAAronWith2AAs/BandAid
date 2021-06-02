@@ -25,7 +25,7 @@ Concert.init(
       allowNull: false,
     },
     date: {
-      type: DataTypes.date,
+      type: DataTypes.DATE,
       allowNull: false,
     },
     headliner: {
@@ -55,14 +55,14 @@ Concert.init(
       allowNull: true,
     },
     userId: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       references: {
         model: "user",
         key: "id",
       },
     },
     venueId: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       references: {
         model: "venue",
         key: "id",
@@ -73,7 +73,7 @@ Concert.init(
     sequelize,
     timestamps: false,
     freezeTableName: true,
-    underscored: true,
+    underscored: false,
     modelName: "concert",
   }
 );

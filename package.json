@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependancies": {
+  "dependencies": {
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",
@@ -27,8 +28,5 @@
   "bugs": {
     "url": "https://github.com/AaronDMendoza/BandAid/issues"
   },
-  "homepage": "https://github.com/AaronDMendoza/BandAid#readme",
-  "dependencies": {
-    "dependencies": "0.0.1"
-  }
+  "homepage": "https://github.com/AaronDMendoza/BandAid#readme"
 }
