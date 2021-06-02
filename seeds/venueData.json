@@ -1,0 +1,29 @@
+[
+  {
+    "venueName": "Party Town",
+    "venueCity": "Denver",
+    "venueState": "Colorado",
+    "contactEmail": "partytown@yahoo.com",
+    "phone": "555-555-5555",
+    "mgmt": "Billy Bob",
+    "rating": "ten outta ten"
+  },
+  {
+    "venueName": "Party Place",
+    "venueCity": "New York",
+    "venueState": "New York",
+    "contactEmail": "partyplace@yahoo.com",
+    "phone": "555-555-5555",
+    "mgmt": "Benny Bob",
+    "rating": "seven outta ten"
+  },
+  {
+    "venueName": "Party Palace",
+    "venueCity": "Nashville",
+    "venueState": "Tennesse",
+    "contactEmail": "partypalace@yahoo.com",
+    "phone": "555-555-5555",
+    "mgmt": "Bo Bob",
+    "rating": "eight outta ten"
+  }
+]
