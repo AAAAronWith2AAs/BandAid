@@ -54,6 +54,20 @@ Concert.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
+    userId: {
+      type: DataTypes.STRING,
+      references: {
+        model: "user",
+        key: "id",
+      },
+    },
+    venueId: {
+      type: DataTypes.STRING,
+      references: {
+        model: "venue",
+        key: "id",
+      },
+    },
   },
   {
     sequelize,
