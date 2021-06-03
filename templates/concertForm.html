@@ -11,86 +11,112 @@
     />
   </head>
   <body>
-    <div class="field">
-      <label class="label">Venue Name</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="e.g The Knuckle Duster" />
+    <form id="post-concert">
+      <div class="field">
+        <label class="label">Venue Name</label>
+        <div class="control">
+          <input
+            id="venue-name"
+            class="input"
+            type="text"
+            placeholder="e.g The Knuckle Duster"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="field">
-      <label class="label">Contact Email</label>
-      <div class="control">
-        <input
-          class="input"
-          type="email"
-          placeholder="e.g. knuckleduster@gmail.com"
-        />
+      <div class="field">
+        <label class="label">DATE --WE SHOULD CHANGE THIS--</label>
+        <div class="control">
+          <input id="date" class="input" type="text" placeholder="2021-05-07" />
+        </div>
       </div>
-    </div>
-
-    <div class="field">
-      <label class="label">DATE --WE SHOULD CHANGE THIS--</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="2021-05-07" />
+      <div class="field">
+        <label class="label">Headliner</label>
+        <div class="control">
+          <input
+            id="headliner"
+            class="input"
+            type="text"
+            placeholder="The Misfits"
+          />
+        </div>
       </div>
-    </div>
-    <div class="field">
-      <label class="label">Headliner</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="The Misfits" />
+      <div class="field">
+        <label class="label">Guarantee</label>
+        <div class="control">
+          <input
+            id="guarantee"
+            class="input"
+            type="text"
+            placeholder="Enter Dollar Amount"
+          />
+        </div>
       </div>
-    </div>
-    <div class="field">
-      <label class="label">Guarantee</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="Enter Dollar Amount" />
+      <div class="field">
+        <label id="presale" class="label">Presale</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Number of Presale Tickets"
+          />
+        </div>
       </div>
-    </div>
-    <div class="field">
-      <label class="label">Presale</label>
-      <div class="control">
-        <input
-          class="input"
-          type="text"
-          placeholder="Number of Presale Tickets"
-        />
+      <div class="field">
+        <label class="label">Presale Sold</label>
+        <div class="control">
+          <input
+            id="presale-sold"
+            class="input"
+            type="text"
+            placeholder="Number of Presale Sold"
+          />
+        </div>
       </div>
-    </div>
-    <div class="field">
-      <label class="label">Presale Sold</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="Number of Presale Sold" />
+      <div class="field">
+        <label class="label">Actual Payout</label>
+        <div class="control">
+          <input
+            id="actual-payout"
+            class="input"
+            type="text"
+            placeholder="Enter Dollar Amount"
+          />
+        </div>
       </div>
-    </div>
-    <div class="field">
-      <label class="label">Actual Payout</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="Enter Dollar Amount" />
+      <div class="field">
+        <label class="label">Merch Sales</label>
+        <div class="control">
+          <input
+            id="merch-sales"
+            class="input"
+            type="text"
+            placeholder="Enter Dollar Amount"
+          />
+        </div>
       </div>
-    </div>
-    <div class="field">
-      <label class="label">Merch Sales</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="Enter Dollar Amount" />
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input id="21" type="checkbox" />
+            21 and up
+          </label>
+        </div>
       </div>
-    </div>
-    <div class="field">
-      <div class="control">
-        <label class="checkbox">
-          <input type="checkbox" />
-          21 and up
-        </label>
+      <div class="field">
+        <label class="label">Comments</label>
+        <div class="control">
+          <textarea
+            id="comments"
+            class="textarea"
+            placeholder="Textarea"
+          ></textarea>
+        </div>
       </div>
-    </div>
-    <div class="field">
-      <label class="label">Comments</label>
       <div class="control">
-        <textarea class="textarea" placeholder="Textarea"></textarea>
+        <button class="button is-primary">Submit</button>
       </div>
-    </div>
-    <div class="control">
-      <button class="button is-primary">Submit</button>
-    </div>
+    </form>
+    <script src="/public/js/post-concert.js"></script>
   </body>
 </html>
