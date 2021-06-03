@@ -41,8 +41,13 @@ Venue.init(
     },
 
     rating: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: true,
+      defaultValue: 0,
+      validate: {
+        min: 0,
+        max: 5,
+      },
     },
   },
   {

@@ -4,11 +4,14 @@ async function newFormHandler(event) {
   const date = document.querySelector("#date").value;
   const headliner = document.querySelector("#headliner").value;
   const guarantee = document.querySelector("#guarantee").value;
-  const presale = document.querySelector("#presale").value;
+  const presale_amount = document.querySelector("#presale").value;
   const presale_sold = document.querySelector("#presale-sold").value;
   const actual_payout = document.querySelector("#actual-payout").value;
   const merch_sales = document.querySelector("#merch-sales").value;
-  const is_21 = document.querySelector("#21:checked") ? true : false;
+  const twenty_one_plus = document.querySelector("#21:checked") ? true : false;
+  const comments = document.querySelector("#comments").value;
+  const user_id = document.querySelector("#user-id").value;
+  const venue_id = document.querySelector("#venue-id");
 
   // Send fetch request to add a new concert
   const response = await fetch(`api/concerts`, {
@@ -18,11 +21,14 @@ async function newFormHandler(event) {
       date,
       headliner,
       guarantee,
-      presale,
+      presale_amount,
       presale_sold,
       actual_payout,
       merch_sales,
-      is_21,
+      twenty_one_plus,
+      comments,
+      user_id,
+      venue_id,
     }),
     headers: {
       "Content-Type": "application/json",
