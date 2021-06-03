@@ -23,6 +23,9 @@ router.get("/:id", async (req, res) => {
 
     const concert = concertData.get({ plain: true });
     res.render("concertDisplay", { concert });
+
+    res.status(200).json(concertData);
+
   } catch (err) {
     res.status(500).json(err);
   }
