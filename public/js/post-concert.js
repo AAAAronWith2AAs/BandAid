@@ -11,7 +11,7 @@ async function newFormHandler(event) {
   const is_21 = document.querySelector("#21:checked") ? true : false;
 
   // Send fetch request to add a new concert
-  const response = await fetch(`http://localhost:1138/api/concerts`, {
+  const response = await fetch(`api/concerts`, {
     method: "POST",
     body: JSON.stringify({
       venue_name,
