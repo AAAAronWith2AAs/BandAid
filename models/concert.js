@@ -16,14 +16,6 @@ Concert.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    venueName: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    contactEmail: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     date: {
       type: DataTypes.DATE,
       allowNull: false,
@@ -35,33 +27,33 @@ Concert.init(
     guarantee: {
       type: DataTypes.STRING,
     },
-    presaleAmount: {
+    presale_amount: {
       type: DataTypes.INTEGER,
     },
-    presaleSold: {
+    presale_sold: {
       type: DataTypes.INTEGER,
     },
-    twentyOnePlus: {
+    twenty_one_plus: {
       type: DataTypes.BOOLEAN,
     },
-    actualPayout: {
+    actual_payout: {
       type: DataTypes.INTEGER,
     },
-    merchSales: {
+    merch_sales: {
       type: DataTypes.INTEGER,
     },
     comments: {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    userId: {
+    user_id: {
       type: DataTypes.INTEGER,
       references: {
         model: "user",
         key: "id",
       },
     },
-    venueId: {
+    venue_id: {
       type: DataTypes.INTEGER,
       references: {
         model: "venue",

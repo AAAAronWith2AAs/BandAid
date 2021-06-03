@@ -12,19 +12,19 @@ Venue.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    venueName: {
+    venue_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    venueCity: {
+    venue_city: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    venueState: {
+    venue_state: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    contactEmail: {
+    contact_email: {
       type: DataTypes.STRING,
       allowNull: false,
     },
