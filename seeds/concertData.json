@@ -13,8 +13,6 @@
     "venue_id": 2
   },
   {
-    "venue_name": "Party Place",
-    "contact_email": "partyplace@yahoo.com",
     "date": "2021-10-26",
     "headliner": "Becky's Band",
     "guarantee": "Free Drinks!",
@@ -28,8 +26,6 @@
     "venue_id": 2
   },
   {
-    "venue_name": "Party Palace",
-    "contact_email": "partypalace@yahoo.com",
     "date": "2021-11-26",
     "headliner": "Sarah's Band",
     "guarantee": "Free Drinks!",
