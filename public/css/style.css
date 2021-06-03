@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.hero-body {
+  background-image: url(./mihbass.jpeg);
+  background-size: 100%;
+}
+
+h1 {
+  font-size: 10rem;
+  text-shadow: 0 0 2.5rem white;
+  margin-left: 2rem;
+}
+
+.createAccount {
+  width: 30rem;
+  border: solid black;
+  border-radius: 2.5rem;
+  margin: 3rem;
+  justify-content: center;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+.createHeader {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.createFooter {
+  padding: 1rem;
+}
+
+.inputBox {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.label {
+  width: 6rem;
+}
+
+.accountSubmit {
+  margin-top: 1rem;
+}
