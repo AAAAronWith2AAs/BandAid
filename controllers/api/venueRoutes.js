@@ -1,11 +1,13 @@
 const router = require("express").Router();
-const { Venue } = require("../../models");
+const { Venue, Concert } = require("../../models");
 
 // The `/api/venues` endpoint
 
 router.get("/", async (req, res) => {
   try {
-    const venueData = await Venue.findAll();
+    const venueData = await Venue.findAll({
+      include: [{ model: Concert }],
+    });
     res.status(200).json(venueData);
   } catch (err) {
     res.status(500).json(err);
