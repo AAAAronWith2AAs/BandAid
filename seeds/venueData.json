@@ -1,27 +1,27 @@
 [
   {
-    "venueName": "Party Town",
-    "venueCity": "Denver",
-    "venueState": "Colorado",
-    "contactEmail": "partytown@yahoo.com",
+    "venue_name": "Party Town",
+    "venue_city": "Denver",
+    "venue_state": "Colorado",
+    "contact_email": "partytown@yahoo.com",
     "phone": "5555555555",
     "mgmt": "Billy Bob",
     "rating": "ten outta ten"
   },
   {
-    "venueName": "Party Place",
-    "venueCity": "New York",
-    "venueState": "New York",
-    "contactEmail": "partyplace@yahoo.com",
+    "venue_name": "Party Place",
+    "venue_city": "New York",
+    "venue_state": "New York",
+    "contact_email": "partyplace@yahoo.com",
     "phone": "5555555555",
     "mgmt": "Benny Bob",
     "rating": "seven outta ten"
   },
   {
-    "venueName": "Party Palace",
-    "venueCity": "Nashville",
-    "venueState": "Tennesse",
-    "contactEmail": "partypalace@yahoo.com",
+    "venue_name": "Party Palace",
+    "venue_city": "Nashville",
+    "venue_state": "Tennesse",
+    "contact_email": "partypalace@yahoo.com",
     "phone": "5555555555",
     "mgmt": "Bo Bob",
     "rating": "eight outta ten"
