@@ -6,7 +6,8 @@
     "contact_email": "partytown@yahoo.com",
     "phone": "5555555555",
     "mgmt": "Billy Bob",
-    "rating": "ten outta ten"
+    "engineer": "Jordy Laforge",
+    "rating": 3
   },
   {
     "venue_name": "Party Place",
@@ -15,7 +16,8 @@
     "contact_email": "partyplace@yahoo.com",
     "phone": "5555555555",
     "mgmt": "Benny Bob",
-    "rating": "seven outta ten"
+    "engineer": "Nikola Tesla",
+    "rating": 4
   },
   {
     "venue_name": "Party Palace",
@@ -24,6 +26,7 @@
     "contact_email": "partypalace@yahoo.com",
     "phone": "5555555555",
     "mgmt": "Bo Bob",
-    "rating": "eight outta ten"
+    "engineer": "Thomas Edison",
+    "rating": 5
   }
 ]
