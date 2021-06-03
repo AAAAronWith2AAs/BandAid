@@ -6,6 +6,8 @@ const { Concert } = require("../../models");
 router.get("/", async (req, res) => {
   try {
     const concertData = await Concert.findAll();
+    const concerts = concertData.map((concert) => concert.get({ plain: true }));
+    res.render("concertDisplay", { concerts });
     res.status(200).json(concertData);
   } catch (err) {
     res.status(500).json(err);

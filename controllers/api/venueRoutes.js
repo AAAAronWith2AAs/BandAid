@@ -8,6 +8,8 @@ router.get("/", async (req, res) => {
     const venueData = await Venue.findAll({
       include: [{ model: Concert }],
     });
+    const venues = venueData.map((venue) => venue.get({ plain: true }));
+    res.render("venueDisplay", { venues });
     res.status(200).json(venueData);
   } catch (err) {
     res.status(500).json(err);
