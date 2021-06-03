@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BandAID</title>
+    <link rel="stylesheet" href="./testStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <h1 class="title is-1">BandAID</h1>
+        <h2 class="subtitle">
+          Accessible, Informative, DIY organizational tool to store data about
+          concerts your band or musical group has played!
+        </h2>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="createAccount">
+      <div class="createHeader">Add a Concert</div>
+
+      <form>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Venue</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input id="venue-name" class="input" type="text" placeholder="Marquis Theater">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Date</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input id="date" class="input" type="text" placeholder="01/01/2021">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+      </section>
+      
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Guarantee</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input id="guarantee" class="input" type="text" placeholder="If any...">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Presales</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input id="presale" class="input" type="text" placeholder="Amount Given">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Sold</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input id="presale-sold" class="input" type="text" placeholder="Tickets sold amount. Don't lie">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Payout</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input id="actual-payout" class="input" type="text" placeholder="Actual Payout Amount e.g. $0.00">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Merch</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input id="merch-sales" class="input" type="text" placeholder="Merch Sales Amount e.g. $0.00">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+      </section>
+      
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">User ID</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input id="#user-id" class="input" type="text" placeholder="ALWAYS USE SAME NUMBER">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Venue ID</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  <input id="#venue-id" class="input" type="text" placeholder="Assign Venue an ID number">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <textarea class="textarea" placeholder="Comments. Was the door guy a jerk? Log that here." rows="1"></textarea>
+      </section>
+      <section class="inputBox"> 
+        <label class="checkbox">
+            <input id="21:checked" type="checkbox">
+            21+ Show
+          </label>
+      </section>
+      
+          
+       
+      <section class="accountSubmit">
+        <div class="field is-grouped is-grouped-right">
+            <p class="control">
+              <a class="button is-black">
+                Submit
+              </a>
+            </p>
+            <p class="control">
+              <a class="button is-light">
+                Cancel
+              </a>
+            </p>
+          </div>
+      </section>
+      
+    </form>
+      
+          </section>
+
+      <div class="createFooter"></div>
+      
+    </section>
+
+   
+  </body>
+</html>
+
+
