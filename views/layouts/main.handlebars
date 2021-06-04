@@ -57,10 +57,10 @@
             <div class="navbar-item">
               <div class="field is-grouped">
                 <div class="field has-addons has-addons-right">
-                  <form>
+                  <form id="nav-search">
                     <p class="control">
                       <span class="select">
-                        <select>
+                        <select id="nav-select">
                           <option>Concert by Band</option>
                           <option>Venue by Name</option>
                           <option>Band by Name</option>
@@ -68,7 +68,12 @@
                       </span>
                     </p>
                     <p class="control">
-                      <input class="input" type="text" placeholder="Search" />
+                      <input
+                        id="search-value"
+                        class="input"
+                        type="text"
+                        placeholder="Search"
+                      />
                     </p>
                     <p class="control">
                       <a class="button is-warning"> Search </a>
