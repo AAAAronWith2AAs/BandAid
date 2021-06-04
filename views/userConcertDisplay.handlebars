@@ -1,0 +1,327 @@
+<section class="createAccount">
+    <div class="createHeader">Your Account</div>
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Username</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      {{user.username}}
+                    </p>
+                  </div>
+          </section>
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Email</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      {{user.email}}
+                    </p>
+                  </div>
+          </section>
+          
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">First Name</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      {{user.first_name}}
+                      </span>
+                    </p>
+                  </div>
+          </section>
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Last Name</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      {{user.last_name}}
+                    </p>
+                  </div>
+          </section>
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">City</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      {{user.city}}
+                    </p>
+                  </div>
+          </section>
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">State</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                    {{user.state}}
+                      </span>
+                    </p>
+                  </div>
+          </section>
+          {{#if user.band_name}}
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Artist Name</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                     {{user.band_name}}
+                    </p>
+                  </div>
+          </section>
+          {{/if}}
+          {{#if user.label}}
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Label</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      {{user.label}}
+                    </p>
+                  </div>
+          </section>
+          {{/if}}
+          {{#if user.facebook}}
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Facebook</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                        {{facebook}}
+                    </p>
+                  </div>
+          </section>
+          {{/if}}
+          {{#if user.twitter}}
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">@Twitter</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                        {{user.twitter}}
+                    </p>
+                  </div>
+          </section>
+          {{/if}}
+          {{#if user.soundcloud}}
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Soundcloud</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                        {{user.soundcloud}}
+                    </p>
+                  </div>
+          </section>
+          {{/if}}
+          {{#if user.bandcamp}}
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Bandcamp</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                    {{user.bandcamp}}
+                    </p>
+                  </div>
+          </section>
+          {{/if}}
+          {{#if user.myspace}}
+          <section class="inputBox">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">MySpace</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      {{user.myspace}}
+                      </span>
+                    </p>
+                  </div>
+          </section>
+          {{/if}}
+              
+           
+          <section class="accountSubmit">
+            <div class="field is-grouped is-grouped-right">
+                <p class="control">
+                  <a class="button is-primary">
+                    Submit
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="button is-light">
+                    Cancel
+                  </a>
+                </p>
+              </div>
+          </section>
+</section>
+
+      <div class="createHeader">All Concerts</div>
+ {{#each concerts as |concert|}}
+<section class="createAccount">
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Venue</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  {{concert.venue.venue_name}}
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Date</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  {{concert.date}}
+                </p>
+              </div>
+      </section>
+      
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Guarantee</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  {{concert.guarantee}}
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Presales</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  {{concert.presale_amount}}
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Sold</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  {{concert.presale_amount}}
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Payout</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  {{concert.actual_payout}}
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Merch</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  {{concert.merch_sales}}
+                </p>
+              </div>
+      </section>
+      
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">User ID</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                 {{user.id}}
+                 {{#if user.band_name}}
+                 {{user.band_name}}
+                 {{/if}}
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Venue ID</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control is-expanded has-icons-left">
+                  {{concert.venue.id}}
+                  {{concert.venue.venue_name}}
+                </p>
+              </div>
+      </section>
+      <section class="inputBox">
+        {{concert.comments}}
+      </section>
+      <section class="inputBox"> 
+        <label class="checkbox">
+            {{#if concert.twenty_one_plus}}
+            <p>21 and up only</p>
+            {{else}}
+            <p>All Ages</p>
+            {{/if}}
+          </label>
+      </section>
+      
+          
+</section>
+{{/each}}

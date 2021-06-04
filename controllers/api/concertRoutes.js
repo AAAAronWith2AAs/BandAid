@@ -51,7 +51,8 @@ router.get("/search/:name", async (req, res) => {
 
     const concerts = userData.get({ plain: true });
     res.status(200);
-    res.render("concertDisplay", { concerts });
+    console.log(concerts);
+    res.render("userConcertDisplay", { concerts });
   } catch (err) {
     res.status(500).json(err);
   }
