@@ -67,6 +67,19 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+router.get("/search/:name", async (req, res) => {
+  const userData = await User.findOne({
+    where: { band_name: req.params.name },
+  });
+  if (!userData) {
+    res.status(404).json({ message: "No concerts found for this user." });
+    return;
+  }
+
+  const user = userData.get({ plain: true });
+  res.status(200);
+  res.render("userDisplay", { user });
+});
 // Login
 // router.post("/login", async (req, res) => {
 //   try {
