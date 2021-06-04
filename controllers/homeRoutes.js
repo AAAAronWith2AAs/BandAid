@@ -4,7 +4,7 @@ const { User } = require("../models");
 
 router.get("/", async (req, res) => {
   try {
-    const usertData = await User.findAll();
+    const usertData = await User.findByPk(1);
     const user = userData.map((user) => user.get({ plain: true }));
     res.render("userDisplay", { user });
     res.status(200).json(userData);

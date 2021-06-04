@@ -121,8 +121,7 @@
         <label class="checkbox">
             {{#if concert.twenty_one_plus}}
             <p>21 and up only</p>
-            {{/if}}
-            {{#if !concert.twenty_one_plus}}
+            {{else}}
             <p>All Ages</p>
             {{/if}}
           </label>
