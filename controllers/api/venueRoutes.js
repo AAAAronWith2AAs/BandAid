@@ -11,7 +11,7 @@ router.get("/", async (req, res) => {
 
     const venues = venueData.map((venue) => venue.get({ plain: true }));
     res.status(200);
-    res.render("venueDisplay", { venues });
+    res.render("venueDisplayAll", { venues });
   } catch (err) {
     res.status(500).json(err);
   }
