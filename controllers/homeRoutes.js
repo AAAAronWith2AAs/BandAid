@@ -4,10 +4,10 @@ const { User } = require("../models");
 
 router.get("/", async (req, res) => {
   try {
-    const usertData = await User.findByPk(1);
+    const userData = await User.findByPk(1);
     const user = userData.map((user) => user.get({ plain: true }));
+    res.status(200);
     res.render("userDisplay", { user });
-    res.status(200).json(userData);
   } catch (err) {
     res.status(500).json(err);
   }
