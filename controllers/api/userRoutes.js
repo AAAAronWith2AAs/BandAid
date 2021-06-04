@@ -16,6 +16,8 @@ router.post("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+//update user
 router.put("/:id", async (req, res) => {
   try {
     const userData = await User.update(req.body, {
@@ -33,6 +35,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+//get all users
 router.get("/", async (req, res) => {
   try {
     const userData = await User.findAll({
@@ -40,12 +43,13 @@ router.get("/", async (req, res) => {
     });
     const users = userData.map((user) => user.get({ plain: true }));
     res.status(200);
-    res.render("userDisplay", { users });
+    res.render("userDisplayAll", { users });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
+//get one user
 router.get("/:id", async (req, res) => {
   try {
     const userData = await User.findByPk(req.params.id);
