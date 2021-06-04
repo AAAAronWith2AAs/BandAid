@@ -19,6 +19,64 @@
           concerts your band or musical group has played!
         </h2>
       </div>
+      <nav class="navbar is-dark">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img
+              src="../public/img/logo.png"
+              alt="BandAID: Accessible, Informative, DIY"
+              height="56"
+            />
+          </a>
+          <div
+            class="navbar-burger"
+            data-target="navbarExampleTransparentExample"
+          >
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#"> Home </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="#"> Your Info </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="#"> Dashboard </a>
+                <a class="navbar-item" href="#"> Concerts </a>
+                <a class="navbar-item" href="#"> Venue </a>
+              </div>
+            </div>
+            <a class="navbar-item" href="#"> Logout </a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <div class="field has-addons has-addons-right">
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option>Concert</option>
+                        <option>Venue</option>
+                        <option>Band</option>
+                      </select>
+                    </span>
+                  </p>
+                  <p class="control">
+                    <input class="input" type="text" placeholder="Search" />
+                  </p>
+                  <p class="control">
+                    <a class="button is-warning"> Search </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </section>
     {{{body}}}
   </body>
