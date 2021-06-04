@@ -34,6 +34,20 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+router.get("/search/:name", async (req, res) => {
+  const venueData = await Venue.findOne({
+    where: { venue_name: req.params.name },
+  });
+  if (!venueData) {
+    res.status(404).json({ message: "No venues found." });
+    return;
+  }
+
+  const venue = venueData.get({ plain: true });
+  res.status(200);
+  res.render("venueDisplay", { venue });
+});
+
 router.post("/", async (req, res) => {
   try {
     const venueData = await Venue.create(req.body);
