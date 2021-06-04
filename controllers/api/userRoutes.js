@@ -39,6 +39,7 @@ router.get("/", async (req, res) => {
       include: [{ model: Concert }],
     });
     const users = userData.map((user) => user.get({ plain: true }));
+    res.status(200);
     res.render("userDisplay", { users });
   } catch (err) {
     res.status(500).json(err);
@@ -55,6 +56,7 @@ router.get("/:id", async (req, res) => {
     }
 
     const user = userData.get({ plain: true });
+    res.status(200);
     res.render("userDisplay", { user });
   } catch (err) {
     res.status(500).json(err);
