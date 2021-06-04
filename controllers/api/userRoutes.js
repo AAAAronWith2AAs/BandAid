@@ -16,6 +16,8 @@ router.post("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+//update user
 router.put("/:id", async (req, res) => {
   try {
     const userData = await User.update(req.body, {
@@ -33,19 +35,21 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+//get all users
 router.get("/", async (req, res) => {
   try {
     const userData = await User.findAll({
       include: [{ model: Concert }],
     });
     const users = userData.map((user) => user.get({ plain: true }));
-    res.render("userDisplay", { users });
-    res.status(200).json(userData);
+    res.status(200);
+    res.render("userDisplayAll", { users });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
+//get one user
 router.get("/:id", async (req, res) => {
   try {
     const userData = await User.findByPk(req.params.id);
@@ -56,9 +60,8 @@ router.get("/:id", async (req, res) => {
     }
 
     const user = userData.get({ plain: true });
+    res.status(200);
     res.render("userDisplay", { user });
-
-    res.status(200).json(userData);
   } catch (err) {
     res.status(500).json(err);
   }

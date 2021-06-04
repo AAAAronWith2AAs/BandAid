@@ -8,9 +8,10 @@ router.get("/", async (req, res) => {
     const venueData = await Venue.findAll({
       include: [{ model: Concert }],
     });
+
     const venues = venueData.map((venue) => venue.get({ plain: true }));
-    res.render("venueDisplay", { venues });
-    res.status(200).json(venueData);
+    res.status(200);
+    res.render("venueDisplayAll", { venues });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -26,9 +27,8 @@ router.get("/:id", async (req, res) => {
     }
 
     const venue = venueData.get({ plain: true });
+    res.status(200);
     res.render("venueDisplay", { venue });
-
-    res.status(200).json(venueData);
   } catch (err) {
     res.status(500).json(err);
   }
