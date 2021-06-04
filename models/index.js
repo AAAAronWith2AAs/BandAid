@@ -1,4 +1,4 @@
-const User = require("./User");
+const User = require("./user");
 const Concert = require("./concert");
 const Venue = require("./venue");
 
