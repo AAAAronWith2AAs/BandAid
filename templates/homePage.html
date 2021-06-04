@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../public/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar is-dark">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img
+            src="../public/img/logo.png"
+            alt="BandAID: Accessible, Informative, DIY"
+            height="56"
+          />
+        </a>
+        <div
+          class="navbar-burger"
+          data-target="navbarExampleTransparentExample"
+        >
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#"> Home </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="#"> Your Info </a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="#"> Dashboard </a>
+              <a class="navbar-item" href="#"> Concerts </a>
+              <a class="navbar-item" href="#"> Venue </a>
+            </div>
+          </div>
+          <a class="navbar-item" href="#"> Logout </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <div class="field has-addons has-addons-right">
+                <p class="control">
+                  <span class="select">
+                    <select>
+                      <option>Concert</option>
+                      <option>Venue</option>
+                      <option>Band</option>
+                    </select>
+                  </span>
+                </p>
+                <p class="control">
+                  <input class="input" type="text" placeholder="Search" />
+                </p>
+                <p class="control">
+                  <a class="button is-warning"> Search </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="home-text">
+        <img src="../public/img/logo.png" alt="BandAID logo" />
+        <h1>Welcome To Band Aid</h1>
+        <h3>
+          BandAID. An organizational toolkit for bands to log data about
+          finances and logistics from a concert or tour for record keeping
+          purposes.
+        </h3>
+      </section>
+    </main>
+  </body>
+</html>
