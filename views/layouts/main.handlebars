@@ -91,13 +91,32 @@
 
           <div class="navbar-end">
             <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
+
+              <div class="field is-grouped">
+                <div class="field has-addons has-addons-right">
+                  <form id="nav-search">
+                    <p class="control">
+                      <span class="select">
+                        <select id="nav-select">
+                          <option>Concert by Band</option>
+                          <option>Venue by Name</option>
+                          <option>Band by Name</option>
+                        </select>
+                      </span>
+                    </p>
+                    <p class="control">
+                      <input
+                        id="search-value"
+                        class="input"
+                        type="text"
+                        placeholder="Search"
+                      />
+                    </p>
+                    <p class="control">
+                      <a class="button is-warning"> Search </a>
+                    </p>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
