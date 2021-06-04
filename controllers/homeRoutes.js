@@ -7,7 +7,6 @@ router.get("/", async (req, res) => {
     const usertData = await User.findByPk(1);
     const user = userData.map((user) => user.get({ plain: true }));
     res.render("userDisplay", { user });
-    res.status(200).json(userData);
   } catch (err) {
     res.status(500).json(err);
   }
