@@ -47,10 +47,5 @@ async function newFormHandler(event) {
 }
 
 document
-<<<<<<< HEAD
-  .querySelector("#post-user")
-  .addEventListener("submit", newFormHandler());
-=======
   .querySelector("#submit-button")
   .addEventListener("click", newFormHandler);
->>>>>>> main
