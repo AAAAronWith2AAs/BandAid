@@ -1,6 +1,6 @@
 async function newFormHandler(event) {
   event.preventDefault();
-  // const venue_name = document.querySelector("#venue-name").value;
+
   const date = document.querySelector("#date").value;
   const guarantee = document.querySelector("#guarantee").value;
   const presale_amount = document.querySelector("#presale").value;
@@ -16,7 +16,6 @@ async function newFormHandler(event) {
   const response = await fetch(`api/concerts`, {
     method: "POST",
     body: JSON.stringify({
-      // venue_name,
       date,
       guarantee,
       presale_amount,
