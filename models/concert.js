@@ -28,19 +28,19 @@ Concert.init(
       type: DataTypes.STRING,
     },
     presale_amount: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
     },
     presale_sold: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
     },
     twenty_one_plus: {
       type: DataTypes.BOOLEAN,
     },
     actual_payout: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
     },
     merch_sales: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
     },
     comments: {
       type: DataTypes.STRING,

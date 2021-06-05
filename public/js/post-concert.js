@@ -12,6 +12,17 @@ async function newFormHandler(event) {
   const user_id = document.querySelector("#user-id").value;
   const venue_id = document.querySelector("#venue-id").value;
 
+  console.log(
+    date,
+    guarantee,
+    presale_amount,
+    presale_sold,
+    actual_payout,
+    merch_sales,
+    user_id,
+    venue_id,
+    comments
+  );
   // Send fetch request to add a new concert
   const response = await fetch(`api/concerts`, {
     method: "POST",
@@ -22,7 +33,6 @@ async function newFormHandler(event) {
       presale_sold,
       actual_payout,
       merch_sales,
-      // twenty_one_plus,
       user_id,
       venue_id,
       comments,

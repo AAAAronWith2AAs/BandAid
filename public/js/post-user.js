@@ -37,12 +37,12 @@ async function newFormHandler(event) {
       "Content-Type": "application/json",
     },
   });
-  document.location.replace("/api/users");
-  // if (response.ok) {
-  //   document.location.replace("/api/users");
-  // } else {
-  //   alert("Failed to add user");
-  // }
+  console.log(response.ok);
+  if (response.ok) {
+    document.location.replace("/api/users");
+  } else {
+    alert("Failed to add user");
+  }
 }
 
 function cancelForm(event) {
@@ -51,7 +51,7 @@ function cancelForm(event) {
 }
 
 document
-  .querySelector("#submit-button")
+  .querySelector("#users-submit-button")
   .addEventListener("click", newFormHandler);
 
 document.querySelector("#cancel-button").addEventListener("click", cancelForm);
