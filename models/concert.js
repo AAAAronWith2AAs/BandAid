@@ -1,8 +1,13 @@
 const { Model, DataTypes } = require("sequelize");
 
+// const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
-class Concert extends Model {}
+class Concert extends Model {
+  // checkPassword(loginPw) {
+  //   return bcrypt.compareSync(loginPw, this.password);
+  // }
+}
 
 Concert.init(
   {
