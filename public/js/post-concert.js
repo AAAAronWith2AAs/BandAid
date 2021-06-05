@@ -3,7 +3,7 @@ async function newFormHandler(event) {
 
   const date = document.querySelector("#date").value;
   const guarantee = document.querySelector("#guarantee").value;
-  const presale_amount = document.querySelector("#presale").value;
+  const presale_amount = document.querySelector("#presale-amount").value;
   const presale_sold = document.querySelector("#presale-sold").value;
   const actual_payout = document.querySelector("#actual-payout").value;
   const merch_sales = document.querySelector("#merch-sales").value;
