@@ -1,20 +1,21 @@
 async function newFormHandler(event) {
+  console.log("the function is running");
   event.preventDefault();
+  const username = document.querySelector("#username").value;
   const first_name = document.querySelector("#first-name").value;
   const last_name = document.querySelector("#last-name").value;
-  const username = document.querySelector("#headliner").value;
   const email = document.querySelector("#email").value;
-  const password = document.querySelector("#password").value;
+  // const password = document.querySelector("#password").value;
   const city = document.querySelector("#city").value;
   const state = document.querySelector("#state").value;
   const band_name = document.querySelector("#band-name").value;
-  const label = document.querySelector("#label");
-  const facebook = document.querySelector("#facebook");
-  const twitter = document.querySelector("#twitter");
-  const soundcloud = document.querySelector("#soundcloud");
-  const bandcamp = document.querySelector("#bandcamp");
-  const myspace = document.querySelector("#myspace");
-
+  const label = document.querySelector("#label").value;
+  const facebook = document.querySelector("#facebook").value;
+  const twitter = document.querySelector("#twitter").value;
+  const soundcloud = document.querySelector("#soundcloud").value;
+  const bandcamp = document.querySelector("#bandcamp").value;
+  const myspace = document.querySelector("#myspace").value;
+  console.log(username);
   // Send fetch request to add a new concert
   const response = await fetch(`api/users`, {
     method: "POST",
@@ -31,7 +32,7 @@ async function newFormHandler(event) {
       soundcloud,
       myspace,
       email,
-      password,
+      // password,
     }),
     headers: {
       "Content-Type": "application/json",
@@ -45,4 +46,6 @@ async function newFormHandler(event) {
   }
 }
 
-document.querySelector("#post-user").addEventListener("submit", newFormHandler);
+document
+  .querySelector("#submit-button")
+  .addEventListener("click", newFormHandler);
