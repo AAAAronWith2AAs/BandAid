@@ -10,7 +10,7 @@ async function newFormHandler(event) {
   const rating = document.querySelector("#rating").value;
 
   // Send fetch request to add a new concert
-  const response = await fetch(`api/concerts`, {
+  const response = await fetch(`api/venues`, {
     method: "POST",
     body: JSON.stringify({
       venue_name,
