@@ -28,12 +28,12 @@ async function newFormHandler(event) {
   });
   //if the venue is added, the 'all' template will be rerendered
   if (response.ok) {
-    document.location.replace("/");
+    document.location.replace("/api/venues");
   } else {
     alert("Failed to add venue");
   }
 }
 
 document
-  .querySelector("#post-venue")
-  .addEventListener("submit", newFormHandler);
+  .querySelector("#submit-button")
+  .addEventListener("click", newFormHandler);

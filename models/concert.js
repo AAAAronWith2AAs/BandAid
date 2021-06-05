@@ -22,7 +22,6 @@ Concert.init(
     },
     headliner: {
       type: DataTypes.STRING,
-      allowNull: false,
     },
     guarantee: {
       type: DataTypes.STRING,
