@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
+
 // const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
@@ -20,9 +21,9 @@ Concert.init(
       type: DataTypes.DATE,
       allowNull: false,
     },
-    headliner: {
-      type: DataTypes.STRING,
-    },
+    // headliner: {
+    //   type: DataTypes.STRING,
+    // },
     guarantee: {
       type: DataTypes.STRING,
     },
