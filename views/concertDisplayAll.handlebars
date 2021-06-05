@@ -1,4 +1,3 @@
-      <div class="createHeader">All Concerts</div>
  {{#each concerts as |concert|}}
 <section class="createAccount">
       <section class="inputBox">
@@ -95,9 +94,9 @@
             <div class="field-body">
               <div class="field">
                 <p class="control is-expanded has-icons-left">
-                 {{concert.user.id}}
-                 {{#if concert.user.band_name}}
-                 {{concert.user.band_name}}
+                 {{user.id}}
+                 {{#if user.band_name}}
+                 {{user.band_name}}
                  {{/if}}
                 </p>
               </div>

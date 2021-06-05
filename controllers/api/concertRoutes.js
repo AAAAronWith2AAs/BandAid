@@ -38,6 +38,26 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+router.get("/search/:name", async (req, res) => {
+  try {
+    const userData = await User.findOne({
+      where: { band_name: req.params.name },
+      include: [{ model: Concert }],
+    });
+    if (!userData) {
+      res.status(404).json({ message: "No concerts found for this user." });
+      return;
+    }
+
+    const concerts = userData.get({ plain: true });
+    res.status(200);
+    console.log(concerts);
+    res.render("userConcertDisplay", { concerts });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.post("/", async (req, res) => {
   try {
     const concertData = await Concert.create(req.body);

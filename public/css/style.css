@@ -9,6 +9,7 @@
 .hero-body {
   background-image: url(/img/mihbass.jpeg);
   background-size: 100%;
+  padding-bottom: 2rem;
 }
 
 h1 {
