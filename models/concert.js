@@ -26,21 +26,27 @@ Concert.init(
     // },
     guarantee: {
       type: DataTypes.STRING,
+      allowNull: true,
     },
     presale_amount: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     presale_sold: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     twenty_one_plus: {
       type: DataTypes.BOOLEAN,
+      allowNull: true,
     },
     actual_payout: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     merch_sales: {
       type: DataTypes.INTEGER,
+      allowNull: true,
     },
     comments: {
       type: DataTypes.STRING,

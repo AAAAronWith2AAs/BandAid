@@ -39,6 +39,13 @@ async function newFormHandler(event) {
   }
 }
 
+function cancelForm(event) {
+  event.preventDefault();
+  document.location.replace("/");
+}
+
 document
   .querySelector("#submit-button")
   .addEventListener("click", newFormHandler);
+
+document.querySelector("#cancel-button").addEventListener("click", cancelForm);
