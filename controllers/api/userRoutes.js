@@ -9,7 +9,7 @@ router.post("/", async (req, res) => {
     // req.session.save(() => {
     //   req.session.loggedIn = true;
 
-    //   res.status(200).json(dbUserData);
+    res.status(200).json(dbUserData);
     // });
   } catch (err) {
     console.log(err);
@@ -68,9 +68,11 @@ router.get("/:id", async (req, res) => {
 });
 
 router.get("/search/:name", async (req, res) => {
+  console.log(req.params.name);
   const userData = await User.findOne({
     where: { band_name: req.params.name },
   });
+  console.log(userData);
   if (!userData) {
     res.status(404).json({ message: "No concerts found for this user." });
     return;

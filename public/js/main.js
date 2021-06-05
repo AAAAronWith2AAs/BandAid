@@ -1,12 +1,20 @@
+const { URLSearchParams } = require("url");
+
 async function searchFormHandler(event) {
   event.preventDefault();
   const category = document.querySelector("#nav-select").value;
   const name = document.querySelector("#search-value").value;
-
+  console.log(category);
+  console.log(name);
   switch (category) {
     case "Concert by Band":
       {
-        await fetch(`api/bands/search/${name}`, {
+        const url =
+          "api/concerts/search/" +
+          new URLSearchParams({
+            name: name,
+          });
+        await fetch(url, {
           method: "GET",
         });
       }
@@ -20,7 +28,12 @@ async function searchFormHandler(event) {
       break;
     case "Band by Name":
       {
-        await fetch(`api/users/search/${name}`, {
+        const url =
+          "api/users/search/" +
+          new URLSearchParams({
+            name: name,
+          });
+        await fetch(url, {
           method: "GET",
         });
       }
@@ -30,4 +43,4 @@ async function searchFormHandler(event) {
 
 document
   .querySelector("#nav-search")
-  .addEventListener("submit", searchFormHandler);
+  .addEventListener("click", searchFormHandler);
