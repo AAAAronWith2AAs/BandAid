@@ -55,7 +55,7 @@ function cancelForm(event) {
 }
 
 document
-  .querySelector("#submit-button")
+  .querySelector("#concert-submit-button")
   .addEventListener("click", newFormHandler);
 
 document.querySelector("#cancel-button").addEventListener("click", cancelForm);
