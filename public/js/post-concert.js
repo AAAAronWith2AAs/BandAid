@@ -24,9 +24,9 @@ async function newFormHandler(event) {
       actual_payout,
       merch_sales,
       // twenty_one_plus,
-      comments,
       user_id,
       venue_id,
+      comments,
     }),
     headers: {
       "Content-Type": "application/json",

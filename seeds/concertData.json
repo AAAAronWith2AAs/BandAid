@@ -1,7 +1,7 @@
 [
   {
     "date": "2021-09-26",
-    "headliner": "Best Band Ever",
+
     "guarantee": "Free Drinks!",
     "presale_amount": 100,
     "presale_sold": 200,
@@ -14,7 +14,7 @@
   },
   {
     "date": "2021-10-26",
-    "headliner": "Becky's Band",
+
     "guarantee": "Free Drinks!",
     "presale_amount": 100,
     "presale_sold": 200,
@@ -27,7 +27,7 @@
   },
   {
     "date": "2021-11-26",
-    "headliner": "Sarah's Band",
+
     "guarantee": "Free Drinks!",
     "presale_amount": 100,
     "presale_sold": 200,
