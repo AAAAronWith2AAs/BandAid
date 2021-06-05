@@ -40,7 +40,7 @@ async function newFormHandler(event) {
   });
   //if the user is added, the 'all' template will be rerendered
   if (response.ok) {
-    document.location.replace("/");
+    document.location.replace("/api/users");
   } else {
     alert("Failed to add user");
   }
