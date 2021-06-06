@@ -9,7 +9,7 @@ async function newFormHandler(event) {
   const engineer = document.querySelector("#engineer").value;
   const rating = document.querySelector("#rating").value;
 
-  // Send fetch request to add a new concert
+  // Send fetch request to add a new venue
   const response = await fetch(`api/venues`, {
     method: "POST",
     body: JSON.stringify({
