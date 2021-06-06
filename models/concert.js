@@ -33,9 +33,9 @@ Concert.init(
     presale_sold: {
       type: DataTypes.STRING,
     },
-    // twenty_one_plus: {
-    //   type: DataTypes.BOOLEAN,
-    // },
+    twenty_one_plus: {
+      type: DataTypes.BOOLEAN,
+    },
     actual_payout: {
       type: DataTypes.STRING,
     },

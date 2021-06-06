@@ -1,6 +1,8 @@
-    <div class="createHeader">All Venues</div>
+   <div class="createHeader">
+      <h1 class="title is-5">Venues</h1></div>
+      <div class="columns is-flex-wrap-wrap">
  {{#each venues as |venue|}}
-<section class="createAccount">
+<section id="createAccount" class="column is-one-quarter">
       <form id="post-venue">
       <section class="inputBox">
         <div class="field is-horizontal">
@@ -94,3 +96,4 @@
       
 </section>
 {{/each}}
+</div>
