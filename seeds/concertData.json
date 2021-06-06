@@ -1,7 +1,6 @@
 [
   {
     "date": "2021-09-26",
-
     "guarantee": "Free Drinks!",
     "presale_amount": 100,
     "presale_sold": 200,
@@ -14,7 +13,6 @@
   },
   {
     "date": "2021-10-26",
-
     "guarantee": "Free Drinks!",
     "presale_amount": 100,
     "presale_sold": 200,
@@ -27,7 +25,6 @@
   },
   {
     "date": "2021-11-26",
-
     "guarantee": "Free Drinks!",
     "presale_amount": 100,
     "presale_sold": 200,
