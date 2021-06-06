@@ -11,6 +11,11 @@
   background-size: 100%;
   padding-bottom: 2rem;
 }
+.mobileHead {
+  background-image: url(/img/lvstage1.jpeg);
+  background-size: 100%;
+  padding-bottom: 2rem;
+}
 
 h1 {
   font-size: 10rem;
