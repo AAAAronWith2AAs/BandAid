@@ -17,40 +17,47 @@
 
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://fierce-beach-33317.herokuapp.com/">
-            <img
-              src="/img/logo.png"
-              {{!-- width="112"
-              height="28" --}}
-            />
+          <a
+            class="navbar-item"
+            href="https://fierce-beach-33317.herokuapp.com/"
+          >
+            <img src="/img/logo.png" />
           </a>
 
           <a
             role="button"
-            class="navbar-burger"
+            class="navbar-burger burger"
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
           >
-            <span aria-hidden="true">Bands</span>
-            <span aria-hidden="true">Concerts</span>
-            <span aria-hidden="true">Venues</span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
         </div>
         <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item" href="https://fierce-beach-33317.herokuapp.com/api/users">
-        All Users
-      </a>
-      <a class="navbar-item" href="https://fierce-beach-33317.herokuapp.com/api/concerts">
-        All Shows
-      </a>
-      <a class="navbar-item" href="https://fierce-beach-33317.herokuapp.com/api/venues">
-        All Venues
-      </a>
-        <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-              <div class="navbar-item has-dropdown is-hoverable">
+            <a
+              class="navbar-item"
+              href="https://fierce-beach-33317.herokuapp.com/api/users"
+            >
+              Bands
+            </a>
+            <a
+              class="navbar-item"
+              href="https://fierce-beach-33317.herokuapp.com/api/concerts"
+            >
+              Concerts
+            </a>
+            <a
+              class="navbar-item"
+              href="https://fierce-beach-33317.herokuapp.com/api/venues"
+            >
+              Venues
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
                 Add New
               </a>
@@ -71,15 +78,11 @@
             </div>
           </div>
         </div>
-        <span aria-hidden="true">Bands 2</span>
-        <span aria-hidden="true">Concerts 2</span>
-        <span aria-hidden="true">Venues 2</span>
-        </div>
       </nav>
 
     </section>
     {{{body}}}
-    
+
   </body>
 
 </html>
