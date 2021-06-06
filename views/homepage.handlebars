@@ -1,42 +1,52 @@
 <main>
   <section class="home-text">
 
-    <h1>Welcome To BandAID</h1>
-    <h3>
-      Accessible, Informative, DIY organizational tool to store data about
-      concerts your band or musical group has played! Log data about finances
-      and logistics from concerts for record keeping purposes.
-    </h3>
-
-    <div class="block">
-      <form id="nav-search">
-        <div class="field is-grouped">
-          <div class="field has-addons has-addons-right">
-            <p class="control">
-              <input
-                id="search-value"
-                class="input"
-                type="text"
-                placeholder="Search"
-              />
-            </p>
-            <p class="control">
-              <span class="select">
-                <select id="nav-select">
-                  <option>Concert by Band</option>
-                  <option>Venue by Name</option>
-                  <option>Band by Name</option>
-                </select>
-              </span>
-            </p>
-            <p id="search-button" class="control">
-              <a class="button is-dark"> Search </a>
-            </p>
-          </div>
-        </div>
-      </form>
+    <div class="columns">
+      <div class="column is-full">
+        <h1 class="title is-1">Welcome To BandAID</h1>
+      </div>
     </div>
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <h3>
+          Accessible, Informative, DIY organizational tool to store data about
+          concerts your band or musical group has played! Log data about
+          finances and logistics from concerts for record keeping purposes.
+        </h3>
+      </div>
 
+    </div>
+    <div class="columns is-centered">
+      <div class="block">
+        <form id="nav-search">
+          <div class="field is-grouped">
+            <div class="field has-addons has-addons-right">
+              <p class="control">
+                <input
+                  id="search-value"
+                  class="input"
+                  type="text"
+                  placeholder="Search"
+                />
+              </p>
+              <p class="control">
+                <span class="select">
+                  <select id="nav-select">
+                    <option>Concert by Band</option>
+                    <option>Venue by Name</option>
+                    <option>Band by Name</option>
+                  </select>
+                </span>
+              </p>
+              <p id="search-button" class="control">
+                <a class="button is-dark"> Search </a>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
+
 </main>
 <script src="/js/main.js"></script>
