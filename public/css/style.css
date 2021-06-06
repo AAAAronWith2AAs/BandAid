@@ -19,7 +19,7 @@ h1 {
 }
 
 #createAccount {
-  /* width: 30rem; */
+  width: 30rem;
   border: solid black;
   border-radius: 2.5rem;
   margin: 3rem;
