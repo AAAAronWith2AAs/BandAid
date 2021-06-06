@@ -1,6 +1,5 @@
 async function newFormHandler(event) {
   event.preventDefault();
-
   const date = document.querySelector("#date").value;
   const guarantee = document.querySelector("#guarantee").value;
   const presale_amount = document.querySelector("#presale-amount").value;
@@ -37,6 +36,7 @@ async function newFormHandler(event) {
       venue_id,
       comments,
     }),
+
     headers: {
       "Content-Type": "application/json",
     },
