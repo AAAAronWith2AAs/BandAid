@@ -6,22 +6,13 @@ async function newFormHandler(event) {
   const presale_sold = document.querySelector("#presale-sold").value;
   const actual_payout = document.querySelector("#actual-payout").value;
   const merch_sales = document.querySelector("#merch-sales").value;
-  // const twenty_one_plus = document.querySelector("#21:checked") ? true : false;
+  const twenty_one_plus = document.querySelector("#twenty-one:checked")
+    ? true
+    : false;
   const comments = document.querySelector("#comments").value;
   const user_id = document.querySelector("#user-id").value;
   const venue_id = document.querySelector("#venue-id").value;
 
-  // console.log(
-  //   date,
-  //   guarantee,
-  //   presale_amount,
-  //   presale_sold,
-  //   actual_payout,
-  //   merch_sales,
-  //   user_id,
-  //   venue_id,
-  //   comments
-  // );
   // Send fetch request to add a new concert
   const response = await fetch(`api/concerts`, {
     method: "POST",
@@ -34,6 +25,7 @@ async function newFormHandler(event) {
       merch_sales,
       user_id,
       venue_id,
+      twenty_one_plus,
       comments,
     }),
 
