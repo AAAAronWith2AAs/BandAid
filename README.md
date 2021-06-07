@@ -2,7 +2,7 @@
 
 ## Description
 
-BandAid is a resource and tool for musicians on tour. It allows a user to store information about their shows and the venues they play at for reference later. Users can also see what others have posted about the venues and their shows as well to gain an insight in to how the concert will go. This was a team project for experience using a number of tehnologies including both front end and back end languages. This app is still under development and we hope to expand on it in the future.
+BandAid is a resource and tool for musicians. It allows a user to store information about other bands, shows and the venues they play at for later reference. This was a team project for experience using a number of tehnologies including both front end and back end languages. This app is still under development and we hope to expand on it in the future.
 
 ## Table of Contents
 
